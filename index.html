@@ -1,415 +1,1280 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>רקמה על מגבות וחלוקים בעיצוב אישי | רקמה בשעה כפר סבא</title>
-    <meta name="description" content="חנות רקמה בשעה בכפר סבא מציעה רקמה ממוחשבת איכותית על מגבות, חלוקים, תיקים ומדים. מעל 40 שנות ניסיון בעיצוב מתנות אישיות וייחודיות. שירות מהיר ומקצועי.">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary-color: #03AEBA;
-            --text-color: #333333;
-            --light-bg: #fdfdfd;
-            --shadow-light: rgba(0, 0, 0, 0.05);
-            --transition: all 0.3s ease;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>רקמה על מגבות וחלוקי רחצה | רקמה בשעה</title>
+  <meta name="description" content="רקמה על מגבות, חלוקי רחצה ומתנות אישיות בעיצוב ממוחשב איכותי. רקמה בשעה בכפר סבא מציעה רקמה מקצועית, אישית ומרגשת לכל מטרה." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#03AEBA" />
+  <link rel="canonical" href="https://one-hour-embroidery.co.il/product-category/embroidery-on-towels/" />
+
+  <meta property="og:title" content="רקמה על מגבות וחלוקי רחצה | רקמה בשעה" />
+  <meta property="og:description" content="רקמה ממוחשבת על מגבות, חלוקים, תיקים, כיפות, חולצות ומתנות אישיות. חנות ותיקה בכפר סבא עם ניסיון, איכות ושירות אישי." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #03AEBA;
+      --primary-dark: #027f88;
+      --text: #111111;
+      --muted: #4d5963;
+      --soft: #f4fbfc;
+      --soft-2: #edf9fa;
+      --white: #ffffff;
+      --border: rgba(3, 174, 186, 0.22);
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+      --shadow-soft: 0 10px 30px rgba(3, 174, 186, 0.13);
+      --radius: 24px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 19px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Rubik", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(3, 174, 186, 0.13), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #f6fcfd 42%, #ffffff 100%);
+      line-height: 1.75;
+      min-width: 320px;
+    }
+
+    a {
+      color: var(--primary-dark);
+      font-size: 19px;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 4px solid rgba(3, 174, 186, 0.38);
+      outline-offset: 4px;
+      border-radius: 12px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    p,
+    li,
+    span,
+    strong,
+    button,
+    input,
+    textarea,
+    footer,
+    small {
+      font-size: 19px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0 0 18px;
+      line-height: 1.25;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 4vw, 3.35rem);
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: clamp(1.75rem, 2.8vw, 2.45rem);
+      font-weight: 800;
+    }
+
+    h3 {
+      font-size: 1.28rem;
+      font-weight: 800;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      right: 16px;
+      z-index: 9999;
+      background: var(--text);
+      color: var(--white);
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: var(--text);
+      min-width: 180px;
+    }
+
+    .brand strong {
+      font-size: 1.18rem;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .brand span {
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.95rem;
+      line-height: 1.35;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid var(--border);
+      background: var(--white);
+      color: var(--text);
+      border-radius: 14px;
+      padding: 10px 14px;
+      cursor: pointer;
+      font-weight: 800;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    .nav-list a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      border-radius: 999px;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .nav-list a:hover {
+      background: rgba(3, 174, 186, 0.11);
+      color: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    main {
+      overflow: hidden;
+    }
+
+    .section {
+      padding: 78px 18px;
+      scroll-margin-top: 96px;
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 80px 18px 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary-dark);
+      background: rgba(3, 174, 186, 0.1);
+      border: 1px solid var(--border);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 18px;
+      font-size: 19px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin: 0 0 22px;
+      max-width: 650px;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .mini-card {
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      border-radius: 18px;
+      padding: 16px;
+      min-height: 110px;
+    }
+
+    .mini-card strong {
+      display: block;
+      color: var(--text);
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .mini-card span {
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .media-card {
+      position: relative;
+      background: linear-gradient(135deg, rgba(3, 174, 186, 0.14), rgba(255, 255, 255, 0.9));
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .media-card::before {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      background: rgba(3, 174, 186, 0.16);
+      border-radius: 50%;
+      top: -70px;
+      left: -60px;
+      z-index: 0;
+    }
+
+    .media-card img {
+      position: relative;
+      z-index: 1;
+      border-radius: 24px;
+      width: 100%;
+      aspect-ratio: 16 / 11;
+      object-fit: cover;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.11);
+    }
+
+    .section-title {
+      max-width: 850px;
+      margin-bottom: 32px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 30px;
+    }
+
+    .panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .soft-section {
+      background:
+        linear-gradient(135deg, rgba(3, 174, 186, 0.09), rgba(255, 255, 255, 0.92)),
+        var(--soft);
+      border-top: 1px solid rgba(3, 174, 186, 0.14);
+      border-bottom: 1px solid rgba(3, 174, 186, 0.14);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      color: var(--primary-dark);
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .image-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+      margin-top: 30px;
+    }
+
+    .image-strip img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #ffffff, #edf9fa);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .highlight-box::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(3, 174, 186, 0.11);
+      bottom: -110px;
+      left: -80px;
+    }
+
+    .highlight-box > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .feature-list li {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(3, 174, 186, 0.18);
+      border-radius: 16px;
+      padding: 13px 16px;
+      color: var(--muted);
+    }
+
+    .feature-list li strong {
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .gift-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .gift-item {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .gift-item strong {
+      display: block;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+      font-weight: 800;
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .step {
+      counter-increment: step;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .step::before {
+      content: counter(step);
+      display: inline-grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 800;
+      margin-bottom: 16px;
+      font-size: 19px;
+    }
+
+    .rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 10px 16px;
+      box-shadow: var(--shadow-soft);
+      font-weight: 800;
+      color: var(--text);
+      margin-top: 10px;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px 22px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      color: var(--text);
+      font-size: 19px;
+    }
+
+    details p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .site-footer {
+      background:
+        radial-gradient(circle at top left, rgba(3, 174, 186, 0.18), transparent 34%),
+        #f6fcfd;
+      border-top: 1px solid var(--border);
+      padding: 60px 18px 18px;
+    }
+
+    .footer-grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr;
+      gap: 22px;
+    }
+
+    .footer-col {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .footer-col h2,
+    .footer-col h3 {
+      font-size: 1.18rem;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .footer-col p,
+    .footer-col li {
+      color: var(--muted);
+    }
+
+    .footer-col ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .footer-actions {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 0 12px 26px rgba(3, 174, 186, 0.22);
+      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      font-size: 19px;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(3, 174, 186, 0.28);
+    }
+
+    .btn.secondary {
+      background: #ffffff;
+      color: var(--primary-dark);
+      border-color: var(--border);
+    }
+
+    .bottom-notes {
+      max-width: var(--max);
+      margin: 24px auto 0;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .bottom-notes p {
+      margin: 8px 0;
+    }
+
+    .floating-actions {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      z-index: 999;
+      display: grid;
+      gap: 10px;
+    }
+
+    .float-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 58px;
+      min-height: 58px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+      border: 2px solid rgba(255, 255, 255, 0.9);
+      font-size: 19px;
+    }
+
+    .float-btn:hover {
+      background: var(--primary-dark);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-points,
+      .cards,
+      .steps,
+      .gift-grid,
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .image-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      html {
+        font-size: 19px;
+      }
+
+      .header-inner {
+        align-items: center;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .site-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #ffffff;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        display: none;
+      }
+
+      .site-nav.is-open {
+        display: block;
+      }
+
+      .nav-list {
+        display: grid;
+        padding: 16px;
+      }
+
+      .nav-list a {
+        width: 100%;
+        justify-content: flex-start;
+        border-radius: 14px;
+      }
+
+      .hero {
+        padding-top: 54px;
+      }
+
+      .section {
+        padding: 58px 16px;
+      }
+
+      .hero-points,
+      .cards,
+      .steps,
+      .gift-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .panel,
+      .highlight-box,
+      .card,
+      .footer-col {
+        padding: 22px;
+      }
+
+      .floating-actions {
+        left: 12px;
+        bottom: 12px;
+      }
+
+      .float-btn {
+        min-width: 54px;
+        min-height: 54px;
+        padding: 10px 14px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "רקמה בשעה",
+    "url": "https://one-hour-embroidery.co.il/",
+    "telephone": ["052-473-4466", "09-765-0150"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ויצמן 84",
+      "addressLocality": "כפר סבא",
+      "addressCountry": "IL"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://www.facebook.com/one.hour.embroidery/"
+    ],
+    "description": "חנות ותיקה בכפר סבא לשירותי רקמה ממוחשבת, רקמה על מגבות, חלוקי רחצה, כיפות, מדים, תיקים, חולצות ומתנות אישיות."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "מה אפשר לרקום על מגבות?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "אפשר לרקום שם פרטי, שם משפחה, הקדשה, לוגו, סמל, עיטור או משפט אישי, בהתאם לסוג המגבת ולבחירת הלקוח."
         }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+      },
+      {
+        "@type": "Question",
+        "name": "למי מתאימה מגבת עם רקמה אישית?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "מגבת עם רקמה מתאימה כמתנה אישית למשפחה, חברים, עובדים, חיילים, חתן וכלה, מתגייסים, אירועי חברה, ימי הולדת ומתנות לבית."
         }
-
-        body {
-            font-family: 'Assistant', 'Heebo', sans-serif;
-            font-size: 19px;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-bg);
+      },
+      {
+        "@type": "Question",
+        "name": "האם ניתן להזמין חלוק רחצה עם רקמה?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "כן. ניתן להזמין חלוק רחצה עם רקמה אישית, לרבות שם, הקדשה, לוגו או עיצוב מותאם, בהתאם לאפשרויות המוצר."
         }
-
-        /* נגישות - גודל טקסט מינימלי */
-        p, span, a, li, button {
-            font-size: 19px;
+      },
+      {
+        "@type": "Question",
+        "name": "האם רקמה בשעה מבצעת רקמה גם על מוצרים נוספים?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "כן. ניתן לבצע רקמה ממוחשבת על מגוון מוצרים כמו חולצות, מדים, כיפות, כובעים, תיקים, מצעים, סינרים, פאצ׳ים ופריטים נוספים."
         }
-
-        h1, h2, h3 {
-            color: var(--text-color);
-            margin-bottom: 20px;
-            font-weight: 700;
+      },
+      {
+        "@type": "Question",
+        "name": "איפה נמצאת החנות?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "החנות ממוקמת ברחוב ויצמן 84 בכפר סבא, במרחק של כחמש דקות הליכה מקניון ערים."
         }
-
-        h1, h2 {
-            color: var(--primary-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* הדר וניווט */
-        header {
-            background: white;
-            box-shadow: 0 2px 10px var(--shadow-light);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 15px 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin-right: 25px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 400;
-            transition: var(--transition);
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
-        /* המבורגר למובייל */
-        .burger {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .burger div {
-            width: 25px;
-            height: 3px;
-            background-color: var(--primary-color);
-        }
-
-        /* סקשנים */
-        section {
-            padding: 80px 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #f9fdfd 0%, #eef9fa 100%);
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 25px;
-        }
-
-        .image-box {
-            margin: 40px 0;
-            box-shadow: 0 15px 35px var(--shadow-light);
-            border-radius: 10px;
-            overflow: hidden;
-            display: inline-block;
-            background: white;
-            padding: 10px;
-        }
-
-        .image-box img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            display: block;
-        }
-
-        /* כפתורים */
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(3, 174, 186, 0.3);
-        }
-
-        /* כפתורים צפים */
-        .floating-btns {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 999;
-        }
-
-        .floating-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: var(--transition);
-        }
-
-        .float-wa { background-color: #25d366; }
-        .float-phone { background-color: var(--primary-color); }
-
-        .floating-btn img { width: 30px; filter: brightness(0) invert(1); }
-
-        /* פוטר */
-        footer {
-            background: #f4f4f4;
-            padding: 60px 0 20px;
-            border-top: 5px solid var(--primary-color);
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-col h3 {
-            font-size: 22px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid var(--primary-color);
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .footer-col p, .footer-col a {
-            margin-bottom: 10px;
-            display: block;
-            text-decoration: none;
-            color: var(--text-color);
-        }
-
-        .privacy-note {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.4;
-            margin-top: 20px;
-        }
-
-        .bottom-bar {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-        }
-
-        .tlh { text-align: left; font-size: 14px; margin-top: 20px; }
-
-        /* רספונסיביות */
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .burger { display: flex; }
-            h1 { font-size: 32px; }
-            section { padding: 40px 0; }
-        }
-    </style>
+      }
+    ]
+  }
+  </script>
 </head>
-<body>
 
-    <div class="floating-btns">
-        <a href="https://wa.me/972524734466" class="floating-btn float-wa" title="שלחו לנו הודעה בוואטסאפ">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-        </a>
-        <a href="tel:0524734466" class="floating-btn float-phone" title="התקשרו אלינו">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Telephone_icon.png" alt="Phone">
-        </a>
+<body>
+  <a class="skip-link" href="#main-content" title="דילוג לתוכן המרכזי">דילוג לתוכן המרכזי</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="brand" href="#top" title="רקמה בשעה - חזרה לראש הדף" aria-label="רקמה בשעה - חזרה לראש הדף">
+        <strong>רקמה בשעה</strong>
+        <span>רקמה ממוחשבת ומתנות אישיות בכפר סבא</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="פתיחת תפריט ניווט" aria-controls="main-nav" aria-expanded="false">
+        ☰ תפריט
+      </button>
+
+      <nav id="main-nav" class="site-nav" aria-label="תפריט ראשי">
+        <ul class="nav-list">
+          <li><a href="#towels" title="מעבר לאזור רקמה על מגבות">רקמה על מגבות</a></li>
+          <li><a href="#robes" title="מעבר לאזור חלוק רחצה עם רקמה">חלוקי רחצה</a></li>
+          <li><a href="#products" title="מעבר לאזור רקמה על מוצרים">רקמה על מוצרים</a></li>
+          <li><a href="#gifts" title="מעבר לאזור מתנות אישיות">מתנות אישיות</a></li>
+          <li><a href="#process" title="מעבר לאזור תהליך העבודה">איך זה עובד</a></li>
+          <li><a href="#faq" title="מעבר לאזור שאלות ותשובות">שאלות ותשובות</a></li>
+          <li><a href="#contact" title="מעבר לאזור יצירת קשר">יצירת קשר</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">רקמה אישית שהופכת כל פריט למתנה עם משמעות</span>
+          <h1 id="hero-title">רקמה על מגבות וחלוקי רחצה בעיצוב אישי</h1>
+          <p>
+            ב"רקמה בשעה" בכפר סבא הופכים מגבות, חלוקי רחצה ומוצרי טקסטיל לפריטים אישיים, יפים ושימושיים יותר.
+            החנות מתמחה ברקמה ממוחשבת איכותית לפי בחירת הלקוח, עם אפשרות לרקום שם, הקדשה, לוגו, סמל, עיטור או משפט אישי
+            שמתאים בדיוק לאופי המתנה, לאירוע ולמי שמקבל אותה.
+          </p>
+          <p>
+            הדגש הוא על תוצאה נקייה, מדויקת ונעימה לעין: בחירת צבעי חוט, סגנון כתב, מיקום הרקמה וסוג המוצר שעליו מבצעים את העבודה.
+            כך מגבת רגילה, חלוק רחצה, תיק, כיפה, חולצה או פריט עבודה יכולים להפוך למוצר אישי, ממותג ומרגש.
+          </p>
+
+          <div class="hero-points" aria-label="יתרונות מרכזיים">
+            <div class="mini-card">
+              <strong>רקמה ממוחשבת</strong>
+              <span>ביצוע מדויק, נקי ומקצועי לפי העיצוב המבוקש.</span>
+            </div>
+            <div class="mini-card">
+              <strong>חנות ותיקה</strong>
+              <span>שירות אישי בכפר סבא, חמש דקות הליכה מקניון ערים.</span>
+            </div>
+            <div class="mini-card">
+              <strong>מתנה שימושית</strong>
+              <span>פריט אישי שנשאר, משמש ומרגיש מיוחד לאורך זמן.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <img src="Gemini_29.7.26 רקמה על מגבות.jpg" alt="מגבת לבנה עם רקמה אישית לצד מכונת רקמה ממוחשבת וחוטי רקמה צבעוניים" />
+        </div>
+      </div>
+    </section>
+
+    <section id="towels" class="section soft-section" aria-labelledby="towels-title">
+      <div class="container split">
+        <div class="media-card">
+          <img src="Gemini_29.4.26 רקמה על מגבות.jpg" alt="מגבת רקומה בעיצוב אישי על שולחן עבודה בחנות רקמה" />
+        </div>
+
+        <div class="panel">
+          <h2 id="towels-title">רקמה על מגבות שמתאימה למתנה אישית, עסקית ומשפחתית</h2>
+          <p>
+            מגבת עם רקמה אישית היא אחת המתנות היפות ביותר כי היא משלבת שימוש יומיומי עם טאץ׳ אישי.
+            במקום לתת עוד מוצר כללי, אפשר לבחור מגבת איכותית, להוסיף שם, הקדשה קצרה, סמל, תאריך או עיצוב מיוחד,
+            ולקבל מתנה שנראית מושקעת אבל עדיין נשארת פרקטית ונעימה לשימוש.
+          </p>
+          <p>
+            בקטגוריית <a href="https://one-hour-embroidery.co.il/product-category/embroidery-on-towels/" title="מעבר לקטגוריית רקמה על מגבות באתר רקמה בשעה">רקמה על מגבות</a>
+            ניתן למצוא אפשרויות שונות של מגבות עם רקמה ממוחשבת, כולל בחירת צבע הרקמה, סגנון הכתב והטקסט שיופיע על המגבת.
+            האפשרות הזו מתאימה למתנות יום הולדת, מתנות לחיילים, מתנות לחתן וכלה, מתנות לעובדים, מתנות לאורחים, מתנות לבית חדש
+            וגם לפריטים ממותגים עבור עסקים, קליניקות, חדרי אירוח, ספא, טיפולים ואירועים.
+          </p>
+          <p>
+            היתרון הגדול במגבת רקומה הוא שהיא לא מרגישה כמו מוצר מדף. היא נושאת שם, ברכה או סימן אישי, ולכן גם כשהיא פשוטה ונקייה בעיצוב,
+            היא מקבלת נוכחות אחרת לגמרי. זו מתנה שאפשר להתאים לילדים, להורים, לזוגות, לחברים קרובים, למתגייסים, למדריכים, לעובדים או ללקוחות.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="robes" class="section" aria-labelledby="robes-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="robes-title">חלוק רחצה עם רקמה: מתנה עם תחושת ספא אישית</h2>
+          <p>
+            חלוק רחצה עם רקמה הוא מוצר שמרגיש יוקרתי יותר, אישי יותר ומפנק יותר. הוא מתאים במיוחד כשמחפשים מתנה עם נוכחות,
+            כזו שלא נעלמת במגירה אלא משמשת בבית, אחרי מקלחת, בספא, בחופשה או כחלק ממארז מתנה מושקע.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>חלוק רחצה לזוגות</h3>
+            <p>
+              רקמה של שמות, ראשי תיבות או כינוי אישי יכולה להפוך זוג חלוקים למתנה מרגשת לחתן וכלה, יום נישואין,
+              מעבר דירה או מתנה אישית לבני זוג.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>חלוק רחצה אישי</h3>
+            <p>
+              מתאים למי שאוהב פריטים אישיים ונקיים. אפשר לבחור טקסט קצר, צבע רקמה וסגנון כתב, וליצור חלוק שנראה מכובד ואישי.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>חלוקים לעסקים</h3>
+            <p>
+              מתאים לקליניקות, חדרי טיפולים, מתחמי אירוח, ספא ועסקים שרוצים להציג מראה אחיד, נקי וממותג עם רקמה מקצועית.
+            </p>
+          </article>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 28px;">
+          <h3>איך בוחרים רקמה שמתאימה לחלוק או למגבת?</h3>
+          <p>
+            הבחירה הנכונה מתחילה בשאלה למי הפריט מיועד. לילדים אפשר לבחור צבעים שמחים וכתב רך יותר; למתנה זוגית עדיף לבחור עיצוב נקי,
+            אלגנטי ולא עמוס; לעסק מומלץ להשתמש בלוגו ברור או בשם העסק בצבע שמתחבר לשפה המותגית. ברקמה ממוחשבת איכותית גם לפרטים קטנים יש חשיבות:
+            עובי החוט, ניגודיות הצבע, מיקום הרקמה וגודל הכיתוב משפיעים על התוצאה הסופית ועל התחושה שהפריט משדר.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section soft-section" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="products-title">לא רק מגבות: רקמה כמעט על כל פריט שמתאים לעבודה</h2>
+          <p>
+            רקמה בשעה היא חנות שמתמחה ברקמה ממוחשבת ובהדפסה ורקמה לפי בחירת הלקוח. לצד מגבות וחלוקי רחצה,
+            אפשר להפוך מגוון רחב של מוצרים לפריטים אישיים או ממותגים: תיקים, כובעים, כיפות, חולצות, מדים, סינרים, מצעים, פאצ׳ים ועוד.
+          </p>
+        </div>
+
+        <div class="split">
+          <div class="panel">
+            <p>
+              רקמה על תיק, למשל, יכולה להתאים לילדים, תלמידים, חוגים, צוותים, עובדים ומתנות סוף שנה.
+              רקמה על כיפות מתאימה לאירועים, חתונות, בר מצווה, שבת חתן או מתנה משפחתית. רקמה על מדים וחולצות מתאימה לעסקים,
+              מטבחים מקצועיים, צוותים, נותני שירות, מוסדות וקבוצות שרוצים מראה אחיד ומקצועי.
+            </p>
+            <p>
+              היתרון ברקמה הוא שהיא יוצרת מראה עמיד, מכובד וטקסטילי יותר מהדפסה רגילה. היא משתלבת בתוך הבד, נותנת תחושה איכותית,
+              ומתאימה במיוחד לפריטים שנמצאים בשימוש חוזר. לכן היא מתאימה גם למתנות פרטיות וגם למיתוג עסקי.
+            </p>
+
+            <ul class="feature-list">
+              <li><strong>רקמה על תיקים:</strong> שמות, סמלים, לוגו, מתנות לילדים, עובדים או קבוצות.</li>
+              <li><strong>רקמה על כיפות:</strong> התאמה לאירועים, משפחות, חתונות ובר מצווה.</li>
+              <li><strong>רקמה על מדים וחולצות:</strong> מראה אחיד לעסקים, צוותים, מסעדות ונותני שירות.</li>
+              <li><strong>פאצ׳ים רקומים:</strong> פתרון יפה לסמלים, יחידות, קבוצות ומיתוג.</li>
+            </ul>
+          </div>
+
+          <div class="media-card">
+            <img src="Gemini_29.4.26 רקמה על מוצרים.jpg" alt="דוגמאות לרקמה על כובע, חולצה, מגבת ותיק בחנות רקמה ממוחשבת" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gifts" class="section" aria-labelledby="gifts-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="gifts-title">מתנה אישית היא מתנה שזוכרים</h2>
+          <p>
+            בעולם שבו הרבה מתנות מרגישות דומות זו לזו, רקמה אישית יוצרת בידול אמיתי. היא מוסיפה לפריט שם, סיפור, מחשבה וכוונה.
+            זו הסיבה שמגבת רקומה, חלוק רחצה עם שם, כיפה ממותגת, תיק עם הקדשה או חולצה עם לוגו יכולים להפוך למתנה שנראית אישית יותר,
+            גם כשמדובר בפריט שימושי ופשוט לכאורה.
+          </p>
+        </div>
+
+        <div class="gift-grid">
+          <div class="gift-item">
+            <strong>מתנות למשפחה</strong>
+            <span>מגבות, חלוקים או מצעים עם שם, הקדשה או עיצוב עדין לבית.</span>
+          </div>
+
+          <div class="gift-item">
+            <strong>מתנות לאירועים</strong>
+            <span>חתונות, בר מצווה, אירוסין, חינה, ברית, יום הולדת או בית חדש.</span>
+          </div>
+
+          <div class="gift-item">
+            <strong>מתנות לעובדים</strong>
+            <span>פריט שימושי עם לוגו או שם העובד, שמתאים גם למארזים עסקיים.</span>
+          </div>
+
+          <div class="gift-item">
+            <strong>מתנות למתגייסים</strong>
+            <span>מגבת, תיק או פריט אישי עם שם, הקדשה או סמל שמתאים לשירות.</span>
+          </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 30px;">
+          <h3>איך רקמה מרימה את הערך של המתנה?</h3>
+          <p>
+            הערך של מתנה לא נמדד רק במחיר שלה, אלא גם בתחושה שהיא מעבירה. כאשר אדם מקבל מגבת עם השם שלו,
+            חלוק רחצה עם הקדשה או תיק עם עיצוב שמדבר אליו, הוא מבין שהייתה כאן מחשבה. הרקמה מוסיפה לפריט זהות.
+            היא לא חייבת להיות גדולה או עמוסה; לפעמים שם קטן בצבע נכון עושה את כל ההבדל. לכן רקמה אישית מתאימה גם למי שרוצה מתנה אלגנטית,
+            גם למי שרוצה משהו מרגש, וגם לעסקים שרוצים להשאיר רושם מכובד אצל לקוחות, עובדים או שותפים.
+          </p>
+          <p>
+            ברקמה בשעה מקפידים על התאמה בין המוצר, סוג הבד, גודל הרקמה, בחירת החוטים והעיצוב הסופי. התוצאה צריכה להיות לא רק יפה בתמונה,
+            אלא נעימה, קריאה, מאוזנת ומתאימה לשימוש אמיתי.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section soft-section" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="panel">
+          <h2 id="about-title">רקמה בשעה בכפר סבא: חנות ותיקה עם ניסיון, שירות ועבודת רקמה מקצועית</h2>
+          <p>
+            רקמה בשעה ממוקמת ברחוב ויצמן 84 בכפר סבא, במרחק של כחמש דקות הליכה מקניון ערים.
+            החנות מעניקה שירותי רקמה ממוחשבת ללקוחות פרטיים, חברות, ארגונים, מוסדות, קבוצות, יחידות ועסקים מכל תחומי המשק.
+          </p>
+          <p>
+            העבודה כוללת דיגיטציה של העיצוב המבוקש והתאמה שלו לביצוע רקמה ממוחשבת מדויקת. המשמעות היא שלא מסתפקים רק בהעברת טקסט למוצר,
+            אלא מתייחסים גם לצורה, לצבע, לגודל, למיקום וליכולת של הבד לקבל את הרקמה בצורה יפה ונכונה.
+          </p>
+          <p>
+            נכון לאפריל 2026, ציון העסק בגוגל מפות הוא 4.7 כוכבים מתוך 5. הנתון הזה משתלב עם אופי העסק: חנות מקומית, ותיקה,
+            נגישה ונעימה, שמעניקה שירות אישי לצד יכולת מקצועית בתחום הרקמה הממוחשבת.
+          </p>
+          <div class="rating" aria-label="ציון העסק בגוגל מפות נכון לאפריל 2026">
+            ציון Google Maps: 4.7 מתוך 5
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <h3>מה אפשר להביא לרקמה?</h3>
+          <p>
+            אפשר לבחור מוצר מתוך מגוון הפריטים של החנות, ובחלק מהמקרים להתייעץ לגבי התאמת פריט אישי לרקמה.
+            לא כל בד ולא כל מוצר מתאימים לכל סוג רקמה, ולכן חשוב לבדוק מראש את עובי הבד, מיקום העבודה, גודל העיצוב והעמידות הנדרשת.
+          </p>
+          <ul class="feature-list">
+            <li><strong>לפרטיים:</strong> מתנות אישיות, מגבות, חלוקים, כיפות, תיקים ופריטי טקסטיל לבית.</li>
+            <li><strong>לעסקים:</strong> מיתוג על חולצות, כובעים, מדים, סינרים, תיקים ופאצ׳ים.</li>
+            <li><strong>לאירועים:</strong> פריטים עם שמות, תאריכים, הקדשות, סמלים או עיצובים ייחודיים.</li>
+            <li><strong>לקבוצות ומוסדות:</strong> מראה אחיד, מכובד וברור עם רקמה מקצועית.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="process-title">איך מתקדמים מרעיון לרקמה מוכנה?</h2>
+          <p>
+            כדי לקבל תוצאה יפה חשוב לחבר בין הרעיון, סוג המוצר, צבעי החוט והביצוע הטכני. תהליך מסודר עוזר להגיע לרקמה מדויקת יותר,
+            קריאה יותר ומתאימה יותר למטרה.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <h3>בחירת מוצר</h3>
+            <p>בוחרים מגבת, חלוק, תיק, כיפה, חולצה, מדים או מוצר אחר שמתאים לרקמה.</p>
+          </article>
+
+          <article class="step">
+            <h3>בחירת עיצוב</h3>
+            <p>מחליטים מה לרקום: שם, לוגו, הקדשה, סמל, משפט קצר או עיצוב אישי.</p>
+          </article>
+
+          <article class="step">
+            <h3>התאמה ממוחשבת</h3>
+            <p>מבצעים התאמה של העיצוב לרקמה דיגיטלית לפי גודל, צבע, מיקום וסוג הבד.</p>
+          </article>
+
+          <article class="step">
+            <h3>ביצוע וגימור</h3>
+            <p>הרקמה מתבצעת בצורה נקייה ומוקפדת, כדי שהמוצר ייראה אישי, מכובד ומוכן למסירה.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="facebook" class="section soft-section" aria-labelledby="facebook-title">
+      <div class="container highlight-box">
+        <h2 id="facebook-title">רוצים לראות עוד דוגמאות ורעיונות?</h2>
+        <p>
+          לעוד השראה, עבודות, דוגמאות ועדכונים מהחנות אפשר לבקר גם בעמוד הפייסבוק של
+          <a href="https://www.facebook.com/one.hour.embroidery/" title="עמוד הפייסבוק של רקמה בשעה" target="_blank" rel="noopener">רקמה בשעה</a>.
+          זה מקום טוב לראות סגנונות שונים של רקמה, רעיונות למתנות ופריטים שיכולים להתאים לאירועים, עסקים ושימוש אישי.
+        </p>
+      </div>
+    </section>
+
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="faq-title">שאלות ותשובות</h2>
+          <p>
+            כמה תשובות קצרות שיעזרו להבין טוב יותר למי מתאים להזמין רקמה אישית ומה אפשר לעשות עם מגבות, חלוקים ומוצרים נוספים.
+          </p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>מה אפשר לרקום על מגבות?</summary>
+            <p>
+              אפשר לרקום שם פרטי, שם משפחה, הקדשה, לוגו, סמל, תאריך, עיטור או משפט אישי. הבחירה תלויה בסוג המגבת,
+              גודל אזור הרקמה והסגנון הרצוי.
+            </p>
+          </details>
+
+          <details>
+            <summary>למי מתאימה מגבת עם רקמה אישית?</summary>
+            <p>
+              מגבת עם רקמה מתאימה למשפחה, חברים, ילדים, מתגייסים, חתן וכלה, עובדים, לקוחות, מדריכים, צוותים וגם כמתנה לבית חדש.
+            </p>
+          </details>
+
+          <details>
+            <summary>האם אפשר להזמין חלוק רחצה עם רקמה?</summary>
+            <p>
+              כן. חלוק רחצה עם רקמה מתאים מאוד כמתנה אישית, מתנה זוגית, מתנה לעובדים או פריט ממותג לעסקי אירוח, טיפוח וספא.
+            </p>
+          </details>
+
+          <details>
+            <summary>האם ניתן לבצע רקמה גם על תיק או מוצר אחר?</summary>
+            <p>
+              כן. ניתן לבצע רקמה על מגוון מוצרים כמו תיקים, כובעים, כיפות, חולצות, מדים, סינרים, מצעים, פאצ׳ים ועוד,
+              בהתאם לסוג הבד ואפשרויות העבודה.
+            </p>
+          </details>
+
+          <details>
+            <summary>איפה נמצאת החנות?</summary>
+            <p>
+              החנות ממוקמת ברחוב ויצמן 84 בכפר סבא, במרחק של כחמש דקות הליכה מקניון ערים.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <section class="footer-col" aria-labelledby="footer-about">
+        <h2 id="footer-about">רקמה בשעה</h2>
+        <p>
+          חנות ותיקה בכפר סבא לרקמה ממוחשבת על מגבות, חלוקי רחצה, כיפות, תיקים, חולצות, מדים, פאצ׳ים ומתנות אישיות.
+          שירות אישי, עיצוב מוקפד והתאמה לפי בחירת הלקוח.
+        </p>
+      </section>
+
+      <section class="footer-col" aria-labelledby="footer-services">
+        <h3 id="footer-services">שירותים ומוצרים</h3>
+        <ul>
+          <li>רקמה על מגבות</li>
+          <li>חלוק רחצה עם רקמה</li>
+          <li>רקמה על תיקים</li>
+          <li>כיפות עם רקמה</li>
+          <li>מדים, חולצות ופאצ׳ים</li>
+        </ul>
+      </section>
+
+      <section class="footer-col" aria-labelledby="footer-contact">
+        <h3 id="footer-contact">יצירת קשר</h3>
+        <p>כפר סבא, חמש דקות הליכה מקניון ערים.</p>
+        <div class="footer-actions">
+          <a class="btn" href="tel:0524734466" title="התקשרות לרקמה בשעה במספר 052-473-4466" aria-label="התקשרות לרקמה בשעה במספר 052-473-4466">
+            התקשרו: 052-473-4466
+          </a>
+          <a class="btn secondary" href="tel:097650150" title="התקשרות לרקמה בשעה במספר 09-765-0150" aria-label="התקשרות לרקמה בשעה במספר 09-765-0150">
+            התקשרו: 09-765-0150
+          </a>
+          <a class="btn" href="https://wa.me/972524734466" title="שליחת הודעת וואטסאפ לרקמה בשעה" aria-label="שליחת הודעת וואטסאפ לרקמה בשעה">
+            שלחו וואטסאפ
+          </a>
+        </div>
+      </section>
+
+      <section class="footer-col" aria-labelledby="footer-privacy">
+        <h3 id="footer-privacy">פרטיות ונגישות</h3>
+        <p>
+          אנו מכבדים את פרטיות המשתמשים באתר זה. דף הנחיתה אינו כולל טפסי השארת פרטים ואינו אוסף מידע אישי באופן ישיר.
+          ייתכן ונעשה שימוש בכלי סטטיסטיקה וניתוח תנועה (כגון cookies) לצורך שיפור חוויית המשתמש.
+        </p>
+        <p>
+          האתר מאוחסן ומופעל באמצעות פלטפורמת github, וייתכן כי נתונים טכניים נאספים בהתאם למדיניות הפלטפורמה.
+          ניתן לעיין במדיניות הפרטיות של github בקישור הבא.
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" title="מדיניות הפרטיות הכללית של GitHub" target="_blank" rel="noopener">מדיניות הפרטיות של github</a>.
+        </p>
+      </section>
     </div>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo" title="רקמה בשעה - דף הבית">רקמה בשעה</a>
-                <ul class="nav-links">
-                    <li><a href="#home" title="מעבר לראש הדף">בית</a></li>
-                    <li><a href="#towels" title="מידע על רקמה על מגבות">רקמה על מגבות</a></li>
-                    <li><a href="#products" title="מוצרים נוספים לרקמה">מוצרים נוספים</a></li>
-                    <li><a href="#about" title="אודות החנות שלנו">אודות</a></li>
-                    <li><a href="#contact" title="צרו קשר">צור קשר</a></li>
-                </ul>
-                <div class="burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div class="bottom-notes">
+      <p>נבנה עם היררכיית כותרות, קישורי עוגן, ALT לתמונות, TITLE לקישורים, גודל טקסט מינימלי של 18px וניגודיות משופרת.</p>
+      <p><a title="נבנה על ידי פרוסייטס" class="" href="https://prosites.co.il/">נבנה על ידי פרוסייטס</a></p>
+      <p>ט.ל.ח</p>
+    </div>
+  </footer>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>מתנות עם נשמה: רקמה ממוחשבת איכותית בשעה אחת</h1>
-                <p>חנות וותיקה בכפר סבא המתמחה ברקמה אישית על מגוון מוצרים, עם דגש על איכות ללא פשרות ושירות מהיר מהלב.</p>
-                <div class="image-box">
-                    <img src="מגבות-למספרה-עם-רקמה.jpg" alt="מגבות איכותיות עם רקמת לוגו למספרה בעיצוב אישי" title="דוגמה לרקמה על מגבות למספרה">
-                </div>
-            </div>
-        </section>
+  <div class="floating-actions" aria-label="כפתורי יצירת קשר מהירים">
+    <a class="float-btn" href="tel:0524734466" title="התקשרות מהירה לרקמה בשעה" aria-label="התקשרות מהירה לרקמה בשעה">
+      ☎
+    </a>
+    <a class="float-btn" href="https://wa.me/972524734466" title="שליחת וואטסאפ מהיר לרקמה בשעה" aria-label="שליחת וואטסאפ מהיר לרקמה בשעה">
+      WA
+    </a>
+  </div>
 
-        <section id="towels">
-            <div class="container">
-                <h2>רקמה על מגבות – המתנה המושלמת שכולם אוהבים לקבל</h2>
-                <p>
-                    כשמחפשים מתנה שהיא גם שימושית, גם יוקרתית וגם אישית, <a href="https://one-hour-embroidery.co.il/product-category/embroidery-on-towels/" title="צפו בקולקציית רקמה על מגבות">רקמה על מגבות</a> היא הבחירה הראשונה. אצלנו ב"רקמה בשעה", אנחנו הופכים מגבות רחצה רכות ואיכותיות ליצירת אמנות אישית תוך זמן קצר. מגבת היא מוצר שכולנו משתמשים בו מדי יום, אך ברגע שמוסיפים לה רקמה של שם, הקדשה מרגשת או איור מיוחד, היא הופכת למזכרת שנשמרת לשנים.
-                </p>
-                <p>
-                    סוגי המגבות שאנחנו מציעים כוללים מגבות פנים קטנות, מגבות גוף ענקיות ומפנקות, ומגבות ידיים. המגבות שלנו עשויות 100% כותנה משובחת, בעלת כושר ספיגה גבוה, מה שמבטיח שהרקמה תשב בצורה מושלמת על הבד ולא תפגע ברכותו.
-                </p>
-                <p>
-                    <b>למי זה מתאים?</b> רקמה על מגבת מתאימה כמעט לכל אירוע:
-                    <ul>
-                        <li><b>לימי הולדת:</b> רקמת שם הילד או הילדה על מגבת לבית הספר או לחוג שחייה.</li>
-                        <li><b>למתגייסים:</b> מגבת עם שם ותאריך גיוס היא פריט חובה בכל קיטבג.</li>
-                        <li><b>לחתונה או למעבר דירה:</b> סט מגבות "שלו" ו"שלה" (His & Hers) עם תאריך החתונה.</li>
-                        <li><b>לעסקים:</b> מגבות ממותגות למספרות, מכוני ספא ובתי מלון שרוצים לשדר יוקרה.</li>
-                    </ul>
-                </p>
-                <h3>חלוק רחצה עם רקמה - חווית ספא בבית</h3>
-                <p>
-                    בנוסף למגבות, אחד הלהיטים הגדולים ביותר שלנו הוא חלוק רחצה עם רקמה. דמיינו שאתם יוצאים מהמקלחת ומתעטפים בחלוק רך שעליו רקום השם שלכם או כינוי חיבה. זהו פריט שמעניק תחושת פינוק אמיתית. אנחנו מציעים חלוקים במגוון מידות, מילדים ועד מבוגרים, וניתן לרקום עליהם גם בחזית וגם על הגב – בכתב גדול ומרשים.
-                </p>
-            </div>
-        </section>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.site-nav');
+    const navLinks = document.querySelectorAll('.site-nav a');
 
-        <section id="products" style="background-color: #fcfcfc;">
-            <div class="container">
-                <h2>עולם שלם של רקמה – על כל פריט שתבחרו</h2>
-                <p>
-                    למרות שהמומחיות הגדולה שלנו היא טקסטיל לאמבט, הטכנולוגיה הממוחשבת שלנו מאפשרת לנו לבצע רקמה על כמעט כל מוצר שניתן להעלות על הדעת. הניסיון הרב שצברנו ב"רקמה בשעה" לימד אותנו איך לגשת לכל בד ולכל סוג של מוצר כדי לקבל תוצאה מדויקת ואסתטית.
-                </p>
-                <p>
-                    <b>רקמה על תיקים וכיסויים:</b> אנחנו רוקמים על תיקי גב, תיקי צד ואפילו תיקי אוכל לילדים. רקמה על תיק היא דרך נהדרת למנוע בלבול בגן או בבית הספר, והיא מוסיפה סטייל אישי לכל פריט.
-                </p>
-                <p>
-                    <b>רקמה על מדים ובגדי עבודה:</b> חברות ועסקים רבים בכפר סבא והסביבה מגיעים אלינו כדי למתג את חולצות העבודה של העובדים שלהם. רקמה היא עמידה הרבה יותר מהדפסה – היא לא דוהה בכביסה ולא מתקלפת, ושומרת על מראה ייצוגי לאורך זמן.
-                </p>
-                <p>
-                    <b>מוצרי יודאיקה:</b> אנחנו רוקמים על כיפות, פרוכות, נרתיקים לטלית ותפילין וחלות לשבת. הרקמה שלנו עדינה ומכובדת, ומתאימה מאוד למתנות בר מצווה או חגים.
-                </p>
-                <div class="image-box">
-                    <img src="embroidery-on-products.jpg" alt="מגוון מוצרים עם רקמה ממוחשבת איכותית כולל תיקים וכובעים" title="רקמה על מגוון מוצרים">
-                </div>
-            </div>
-        </section>
+    menuToggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      menuToggle.setAttribute('aria-label', isOpen ? 'סגירת תפריט ניווט' : 'פתיחת תפריט ניווט');
+    });
 
-        <section id="about">
-            <div class="container">
-                <h2>למה לבחור ברקמה בשעה? הלב של כפר סבא</h2>
-                <p>
-                    חנות "רקמה בשעה" היא לא סתם עוד עסק – היא מוסד וותיק ומקצועי הממוקם בלב כפר סבא, במרחק של 5 דקות הליכה בלבד מקניון ערים. השם שלנו, "רקמה בשעה", הוא ההבטחה שלנו אליכם: אנחנו שואפים לספק לכם את המוצר המוכן במהירות המרבית, לעיתים קרובות תוך פחות משעה, מבלי להתפשר על איכות הרקמה.
-                </p>
-                <p>
-                    עם ציון של <b>4.7 כוכבים בגוגל מפות</b> (נכון לאפריל 2026), הלקוחות שלנו מעידים על שירות אדיב, סבלנות בבחירת הגופנים והצבעים, ותוצאה סופית שתמיד מעלה חיוך. אנחנו משתמשים במכונות הרקמה המתקדמות ביותר ובחוטים האיכותיים ביותר שקיימים בשוק.
-                </p>
-                <h3>מתנה אישית היא הדרך להגיד "אכפת לי"</h3>
-                <p>
-                    בעידן של ייצור המוני, מתנה שיוצרה במיוחד עבור מישהו היא בעלת ערך סנטימנטלי עצום. כשאתם נותנים חלוק רחצה או מגבת עם רקמה, אתם מראים שהקדשתם מחשבה, שבחרתם את הצבע, את הניסוח ואת העיצוב. זהו סוד הקסם של החנות שלנו – אנחנו עוזרים לכם להתרגש ולרגש אחרים.
-                </p>
-                <p>
-                    אנחנו מזמינים אתכם להגיע אלינו לחנות בכפר סבא, להתרשם משפע הדוגמאות המוצגות במקום, ולבחור את המתנה הבאה שלכם. הצוות המקצועי שלנו יעמוד לרשותכם וייעץ לכם מהו סוג הרקמה המתאים ביותר לכל בד ומטרה.
-                </p>
-            </div>
-        </section>
-    </main>
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'פתיחת תפריט ניווט');
+      });
+    });
 
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>צרו קשר</h3>
-                    <p>כתובת: כפר סבא (ליד קניון ערים)</p>
-                    <p>טלפון: <a href="tel:097650150" title="התקשרו לטלפון הקווי">09-765-0150</a></p>
-                    <p>נייד: <a href="tel:0524734466" title="התקשרו לנייד">052-473-4466</a></p>
-                    <p>וואטסאפ: <a href="https://wa.me/972524734466" title="שלחו וואטסאפ">052-473-4466</a></p>
-                </div>
-                <div class="footer-col">
-                    <h3>קישורים מהירים</h3>
-                    <a href="https://one-hour-embroidery.co.il/product-category/embroidery-on-towels/" title="לכל מוצרי המגבות">רקמה על מגבות</a>
-                    <a href="https://www.facebook.com/one.hour.embroidery/" title="בקרו אותנו בפייסבוק" target="_blank">הפייסבוק שלנו</a>
-                    <a href="#about" title="קראו עלינו עוד">אודות החנות</a>
-                </div>
-                <div class="footer-col">
-                    <h3>דירוג ושירות</h3>
-                    <p>דירוג גוגל: 4.7 כוכבים ⭐</p>
-                    <p>וותק וניסיון של עשרות שנים</p>
-                    <p>שירות מהיר - רקמה בשעה!</p>
-                </div>
-                <div class="footer-col">
-                    <h3>דרכי התקשרות</h3>
-                    <a href="tel:0524734466" class="btn" style="margin-bottom: 10px; width: 100%; text-align: center;" title="לחצו להתקשרות">התקשר עכשיו</a>
-                    <a href="https://wa.me/972524734466" class="btn" style="background-color: #25d366; width: 100%; text-align: center;" title="שלחו וואטסאפ">הודעת WhatsApp</a>
-                </div>
-            </div>
-
-            <div class="privacy-note">
-                אנו מכבדים את פרטיות המשתמשים באתר זה. דף הנחיתה אינו כולל טפסי השארת פרטים ואינו אוסף מידע אישי באופן ישיר. ייתכן ונעשה שימוש בכלי סטטיסטיקה וניתוח תנועה (כגון cookies) לצורך שיפור חוויית המשתמש. האתר מאוחסן ומופעל באמצעות פלטפורמת github, וייתכן כי נתונים טכניים נאספים בהתאם למדיניות הפלטפורמה. ניתן לעיין במדיניות הפרטיות של github בקישור הבא: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" title="מדיניות פרטיות GITHUB" target="_blank">מדיניות פרטיות GitHub</a>
-            </div>
-
-            <div class="tlh">ט.ל.ח</div>
-
-            <div class="bottom-bar">
-                <p>נבנה עם היררכיית כותרות, קישורי עוגן, ALT לתמונות, TITLE לקישורים, גודל טקסט מינימלי של 18px וניגודיות משופרת.</p>
-                <a title="נבנה על ידי פרוסייטס" href="https://prosites.co.il/" target="_blank">נבנה על ידי פרוסייטס</a>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // המבורגר פשוט למובייל
-        const burger = document.querySelector('.burger');
-        const navLinks = document.querySelector('.nav-links');
-
-        burger.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            if(navLinks.style.display === 'flex') {
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '70px';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.background = 'white';
-                navLinks.style.padding = '20px';
-                navLinks.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
-            }
-        });
-    </script>
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        nav.classList.remove('is-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'פתיחת תפריט ניווט');
+      }
+    });
+  </script>
 </body>
 </html>
