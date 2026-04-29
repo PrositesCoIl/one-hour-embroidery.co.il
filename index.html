@@ -28,6 +28,8 @@
       --soft: #f4fbfc;
       --soft-2: #edf9fa;
       --white: #ffffff;
+      --cream: #fffaf2;
+      --peach: #fff2e8;
       --border: rgba(3, 174, 186, 0.22);
       --shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
       --shadow-soft: 0 10px 30px rgba(3, 174, 186, 0.13);
@@ -78,8 +80,6 @@
     span,
     strong,
     button,
-    input,
-    textarea,
     footer,
     small {
       font-size: 19px;
@@ -223,6 +223,18 @@
 
     .hero {
       padding: 76px 18px 66px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 22px 18px auto auto;
+      width: 210px;
+      height: 210px;
+      border-radius: 44% 56% 62% 38%;
+      background: rgba(3, 174, 186, 0.10);
+      z-index: -1;
     }
 
     .hero-grid {
@@ -260,7 +272,7 @@
     }
 
     .mini-card {
-      background: rgba(255, 255, 255, 0.74);
+      background: rgba(255, 255, 255, 0.78);
       border: 1px solid var(--border);
       box-shadow: var(--shadow-soft);
       border-radius: 18px;
@@ -330,7 +342,7 @@
     }
 
     .panel {
-      background: rgba(255, 255, 255, 0.82);
+      background: rgba(255, 255, 255, 0.84);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
@@ -349,6 +361,112 @@
       border-bottom: 1px solid rgba(3, 174, 186, 0.14);
     }
 
+    .decor-section {
+      position: relative;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(3, 174, 186, 0.16), transparent 28%),
+        radial-gradient(circle at 86% 72%, rgba(255, 184, 108, 0.20), transparent 30%),
+        linear-gradient(135deg, #ffffff 0%, #f5fcfd 48%, #fffaf2 100%);
+      overflow: hidden;
+    }
+
+    .decor-section::before,
+    .decor-section::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border: 1px solid rgba(3, 174, 186, 0.22);
+      border-radius: 38% 62% 45% 55%;
+      pointer-events: none;
+    }
+
+    .decor-section::before {
+      top: 42px;
+      right: -75px;
+      transform: rotate(18deg);
+    }
+
+    .decor-section::after {
+      bottom: 34px;
+      left: -70px;
+      transform: rotate(-20deg);
+      background: rgba(3, 174, 186, 0.05);
+    }
+
+    .thread-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin: 30px 0 0;
+    }
+
+    .thread-chip {
+      border-radius: 999px;
+      min-height: 18px;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+    }
+
+    .thread-chip:nth-child(1) { background: #03AEBA; }
+    .thread-chip:nth-child(2) { background: #f4a261; }
+    .thread-chip:nth-child(3) { background: #111111; }
+    .thread-chip:nth-child(4) { background: #e8f7f8; border: 1px solid var(--border); }
+    .thread-chip:nth-child(5) { background: #7fd9df; }
+
+    .showcase {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+      align-items: stretch;
+      margin-top: 34px;
+    }
+
+    .showcase-main {
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .showcase-main::before {
+      content: "";
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background: rgba(3, 174, 186, 0.10);
+      left: -65px;
+      top: -70px;
+    }
+
+    .showcase-main > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .showcase-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .showcase-item {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .showcase-item strong {
+      color: var(--primary-dark);
+      font-weight: 800;
+      display: block;
+      margin-bottom: 6px;
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -356,7 +474,7 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.86);
+      background: rgba(255, 255, 255, 0.88);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 24px;
@@ -617,7 +735,8 @@
 
     @media (max-width: 980px) {
       .hero-grid,
-      .split {
+      .split,
+      .showcase {
         grid-template-columns: 1fr;
       }
 
@@ -627,6 +746,10 @@
       .gift-grid,
       .footer-grid {
         grid-template-columns: 1fr 1fr;
+      }
+
+      .thread-row {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
@@ -679,14 +802,16 @@
       .cards,
       .steps,
       .gift-grid,
-      .footer-grid {
+      .footer-grid,
+      .thread-row {
         grid-template-columns: 1fr;
       }
 
       .panel,
       .highlight-box,
       .card,
-      .footer-col {
+      .footer-col,
+      .showcase-main {
         padding: 22px;
       }
 
@@ -799,8 +924,6 @@
           <li><a href="#products" title="מעבר לאזור רקמה על מוצרים">מוצרים נוספים</a></li>
           <li><a href="#gifts" title="מעבר לאזור מתנות אישיות">מתנות אישיות</a></li>
           <li><a href="#process" title="מעבר לאזור תהליך העבודה">איך זה עובד</a></li>
-          <li><a href="#faq" title="מעבר לאזור שאלות ותשובות">שאלות ותשובות</a></li>
-          <li><a href="#contact" title="מעבר לאזור יצירת קשר">יצירת קשר</a></li>
         </ul>
       </nav>
     </div>
@@ -834,6 +957,14 @@
               <strong>מתאים למתנות</strong>
               <span>מגבות, חלוקים, תיקים, כיפות ומוצרים נוספים בהתאמה אישית.</span>
             </div>
+          </div>
+
+          <div class="thread-row" aria-hidden="true">
+            <span class="thread-chip"></span>
+            <span class="thread-chip"></span>
+            <span class="thread-chip"></span>
+            <span class="thread-chip"></span>
+            <span class="thread-chip"></span>
           </div>
         </div>
 
@@ -869,7 +1000,7 @@
       </div>
     </section>
 
-    <section id="robes" class="section" aria-labelledby="robes-title">
+    <section id="robes" class="section decor-section" aria-labelledby="robes-title">
       <div class="container">
         <div class="section-title">
           <h2 id="robes-title">חלוק רחצה עם רקמה אישית</h2>
@@ -880,27 +1011,32 @@
           </p>
         </div>
 
-        <div class="cards">
-          <article class="card">
-            <h3>חלוקים לזוגות</h3>
+        <div class="showcase">
+          <div class="showcase-main">
+            <h3>בחירה קטנה שעושה את ההבדל</h3>
             <p>
-              אפשר לרקום שמות, ראשי תיבות או טקסט קצר על זוג חלוקים, ולהתאים אותם לחתונה, יום נישואין, מעבר דירה או מתנה אישית.
+              בחלוק רחצה או במגבת, לא צריך עיצוב עמוס כדי לקבל תוצאה יפה. שם ברור, צבע חוט נכון ומיקום מדויק יכולים להספיק.
+              כאשר הרקמה מתוכננת נכון, המוצר נשאר נקי, שימושי ומכובד.
             </p>
-          </article>
+            <p>
+              זה מתאים במיוחד למתנות זוגיות, מתנות לעובדים, מארזי ספא, חדרי אירוח, קליניקות ומתנות אישיות לבית.
+            </p>
+          </div>
 
-          <article class="card">
-            <h3>חלוק עם שם אישי</h3>
-            <p>
-              פתרון מתאים למי שרוצה פריט אישי ונקי, בלי עיצוב עמוס. שם רקום בצבע נכון יכול להספיק כדי להפוך את החלוק למוצר מיוחד יותר.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>חלוקים לעסקים</h3>
-            <p>
-              מתאים לעסקי אירוח, טיפוח, קליניקות וחדרי טיפול שרוצים חלוקים עם לוגו או שם העסק בצורה מסודרת ומקצועית.
-            </p>
-          </article>
+          <div class="showcase-list">
+            <div class="showcase-item">
+              <strong>חלוקים לזוגות</strong>
+              <span>שמות, ראשי תיבות או טקסט קצר לחתונה, יום נישואין או מעבר דירה.</span>
+            </div>
+            <div class="showcase-item">
+              <strong>חלוק עם שם אישי</strong>
+              <span>פתרון נקי למי שרוצה פריט אישי, בלי עיצוב עמוס או מראה מוגזם.</span>
+            </div>
+            <div class="showcase-item">
+              <strong>חלוקים לעסקים</strong>
+              <span>מתאים לעסקי אירוח, טיפוח, קליניקות וחדרי טיפול עם לוגו או שם העסק.</span>
+            </div>
+          </div>
         </div>
 
         <div class="highlight-box" style="margin-top: 28px;">
@@ -1033,7 +1169,7 @@
       </div>
     </section>
 
-    <section id="process" class="section" aria-labelledby="process-title">
+    <section id="process" class="section decor-section" aria-labelledby="process-title">
       <div class="container">
         <div class="section-title">
           <h2 id="process-title">איך מתקדמים מרעיון לרקמה מוכנה?</h2>
@@ -1154,13 +1290,13 @@
         <p>כפר סבא, חמש דקות הליכה מקניון ערים.</p>
         <div class="footer-actions">
           <a class="btn" href="tel:0524734466" title="התקשרות לרקמה בשעה במספר 052-473-4466" aria-label="התקשרות לרקמה בשעה במספר 052-473-4466">
-            התקשרו: 052-473-4466
+            052-473-4466
           </a>
           <a class="btn secondary" href="tel:097650150" title="התקשרות לרקמה בשעה במספר 09-765-0150" aria-label="התקשרות לרקמה בשעה במספר 09-765-0150">
-            התקשרו: 09-765-0150
+            09-765-0150
           </a>
           <a class="btn" href="https://wa.me/972524734466" title="שליחת הודעת וואטסאפ לרקמה בשעה" aria-label="שליחת הודעת וואטסאפ לרקמה בשעה">
-            שלחו וואטסאפ
+            וואטסאפ 052-473-4466
           </a>
         </div>
       </section>
