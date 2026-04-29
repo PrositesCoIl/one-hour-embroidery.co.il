@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רקמה על מגבות וחלוקים בעיצוב אישי | רקמה בשעה כפר סבא</title>
+    <meta name="description" content="חנות רקמה בשעה בכפר סבא מציעה רקמה ממוחשבת איכותית על מגבות, חלוקים, תיקים ומדים. מעל 40 שנות ניסיון בעיצוב מתנות אישיות וייחודיות. שירות מהיר ומקצועי.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #03AEBA;
+            --text-color: #333333;
+            --light-bg: #fdfdfd;
+            --shadow-light: rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Assistant', 'Heebo', sans-serif;
+            font-size: 19px;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        /* נגישות - גודל טקסט מינימלי */
+        p, span, a, li, button {
+            font-size: 19px;
+        }
+
+        h1, h2, h3 {
+            color: var(--text-color);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* הדר וניווט */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px var(--shadow-light);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-right: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 400;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* המבורגר למובייל */
+        .burger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        /* סקשנים */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f9fdfd 0%, #eef9fa 100%);
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 25px;
+        }
+
+        .image-box {
+            margin: 40px 0;
+            box-shadow: 0 15px 35px var(--shadow-light);
+            border-radius: 10px;
+            overflow: hidden;
+            display: inline-block;
+            background: white;
+            padding: 10px;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+        }
+
+        /* כפתורים */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(3, 174, 186, 0.3);
+        }
+
+        /* כפתורים צפים */
+        .floating-btns {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: var(--transition);
+        }
+
+        .float-wa { background-color: #25d366; }
+        .float-phone { background-color: var(--primary-color); }
+
+        .floating-btn img { width: 30px; filter: brightness(0) invert(1); }
+
+        /* פוטר */
+        footer {
+            background: #f4f4f4;
+            padding: 60px 0 20px;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .footer-col p, .footer-col a {
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .privacy-note {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.4;
+            margin-top: 20px;
+        }
+
+        .bottom-bar {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .tlh { text-align: left; font-size: 14px; margin-top: 20px; }
+
+        /* רספונסיביות */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .burger { display: flex; }
+            h1 { font-size: 32px; }
+            section { padding: 40px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="floating-btns">
+        <a href="https://wa.me/972524734466" class="floating-btn float-wa" title="שלחו לנו הודעה בוואטסאפ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+        <a href="tel:0524734466" class="floating-btn float-phone" title="התקשרו אלינו">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Telephone_icon.png" alt="Phone">
+        </a>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo" title="רקמה בשעה - דף הבית">רקמה בשעה</a>
+                <ul class="nav-links">
+                    <li><a href="#home" title="מעבר לראש הדף">בית</a></li>
+                    <li><a href="#towels" title="מידע על רקמה על מגבות">רקמה על מגבות</a></li>
+                    <li><a href="#products" title="מוצרים נוספים לרקמה">מוצרים נוספים</a></li>
+                    <li><a href="#about" title="אודות החנות שלנו">אודות</a></li>
+                    <li><a href="#contact" title="צרו קשר">צור קשר</a></li>
+                </ul>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>מתנות עם נשמה: רקמה ממוחשבת איכותית בשעה אחת</h1>
+                <p>חנות וותיקה בכפר סבא המתמחה ברקמה אישית על מגוון מוצרים, עם דגש על איכות ללא פשרות ושירות מהיר מהלב.</p>
+                <div class="image-box">
+                    <img src="מגבות-למספרה-עם-רקמה.jpg" alt="מגבות איכותיות עם רקמת לוגו למספרה בעיצוב אישי" title="דוגמה לרקמה על מגבות למספרה">
+                </div>
+            </div>
+        </section>
+
+        <section id="towels">
+            <div class="container">
+                <h2>רקמה על מגבות – המתנה המושלמת שכולם אוהבים לקבל</h2>
+                <p>
+                    כשמחפשים מתנה שהיא גם שימושית, גם יוקרתית וגם אישית, <a href="https://one-hour-embroidery.co.il/product-category/embroidery-on-towels/" title="צפו בקולקציית רקמה על מגבות">רקמה על מגבות</a> היא הבחירה הראשונה. אצלנו ב"רקמה בשעה", אנחנו הופכים מגבות רחצה רכות ואיכותיות ליצירת אמנות אישית תוך זמן קצר. מגבת היא מוצר שכולנו משתמשים בו מדי יום, אך ברגע שמוסיפים לה רקמה של שם, הקדשה מרגשת או איור מיוחד, היא הופכת למזכרת שנשמרת לשנים.
+                </p>
+                <p>
+                    סוגי המגבות שאנחנו מציעים כוללים מגבות פנים קטנות, מגבות גוף ענקיות ומפנקות, ומגבות ידיים. המגבות שלנו עשויות 100% כותנה משובחת, בעלת כושר ספיגה גבוה, מה שמבטיח שהרקמה תשב בצורה מושלמת על הבד ולא תפגע ברכותו.
+                </p>
+                <p>
+                    <b>למי זה מתאים?</b> רקמה על מגבת מתאימה כמעט לכל אירוע:
+                    <ul>
+                        <li><b>לימי הולדת:</b> רקמת שם הילד או הילדה על מגבת לבית הספר או לחוג שחייה.</li>
+                        <li><b>למתגייסים:</b> מגבת עם שם ותאריך גיוס היא פריט חובה בכל קיטבג.</li>
+                        <li><b>לחתונה או למעבר דירה:</b> סט מגבות "שלו" ו"שלה" (His & Hers) עם תאריך החתונה.</li>
+                        <li><b>לעסקים:</b> מגבות ממותגות למספרות, מכוני ספא ובתי מלון שרוצים לשדר יוקרה.</li>
+                    </ul>
+                </p>
+                <h3>חלוק רחצה עם רקמה - חווית ספא בבית</h3>
+                <p>
+                    בנוסף למגבות, אחד הלהיטים הגדולים ביותר שלנו הוא חלוק רחצה עם רקמה. דמיינו שאתם יוצאים מהמקלחת ומתעטפים בחלוק רך שעליו רקום השם שלכם או כינוי חיבה. זהו פריט שמעניק תחושת פינוק אמיתית. אנחנו מציעים חלוקים במגוון מידות, מילדים ועד מבוגרים, וניתן לרקום עליהם גם בחזית וגם על הגב – בכתב גדול ומרשים.
+                </p>
+            </div>
+        </section>
+
+        <section id="products" style="background-color: #fcfcfc;">
+            <div class="container">
+                <h2>עולם שלם של רקמה – על כל פריט שתבחרו</h2>
+                <p>
+                    למרות שהמומחיות הגדולה שלנו היא טקסטיל לאמבט, הטכנולוגיה הממוחשבת שלנו מאפשרת לנו לבצע רקמה על כמעט כל מוצר שניתן להעלות על הדעת. הניסיון הרב שצברנו ב"רקמה בשעה" לימד אותנו איך לגשת לכל בד ולכל סוג של מוצר כדי לקבל תוצאה מדויקת ואסתטית.
+                </p>
+                <p>
+                    <b>רקמה על תיקים וכיסויים:</b> אנחנו רוקמים על תיקי גב, תיקי צד ואפילו תיקי אוכל לילדים. רקמה על תיק היא דרך נהדרת למנוע בלבול בגן או בבית הספר, והיא מוסיפה סטייל אישי לכל פריט.
+                </p>
+                <p>
+                    <b>רקמה על מדים ובגדי עבודה:</b> חברות ועסקים רבים בכפר סבא והסביבה מגיעים אלינו כדי למתג את חולצות העבודה של העובדים שלהם. רקמה היא עמידה הרבה יותר מהדפסה – היא לא דוהה בכביסה ולא מתקלפת, ושומרת על מראה ייצוגי לאורך זמן.
+                </p>
+                <p>
+                    <b>מוצרי יודאיקה:</b> אנחנו רוקמים על כיפות, פרוכות, נרתיקים לטלית ותפילין וחלות לשבת. הרקמה שלנו עדינה ומכובדת, ומתאימה מאוד למתנות בר מצווה או חגים.
+                </p>
+                <div class="image-box">
+                    <img src="embroidery-on-products.jpg" alt="מגוון מוצרים עם רקמה ממוחשבת איכותית כולל תיקים וכובעים" title="רקמה על מגוון מוצרים">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>למה לבחור ברקמה בשעה? הלב של כפר סבא</h2>
+                <p>
+                    חנות "רקמה בשעה" היא לא סתם עוד עסק – היא מוסד וותיק ומקצועי הממוקם בלב כפר סבא, במרחק של 5 דקות הליכה בלבד מקניון ערים. השם שלנו, "רקמה בשעה", הוא ההבטחה שלנו אליכם: אנחנו שואפים לספק לכם את המוצר המוכן במהירות המרבית, לעיתים קרובות תוך פחות משעה, מבלי להתפשר על איכות הרקמה.
+                </p>
+                <p>
+                    עם ציון של <b>4.7 כוכבים בגוגל מפות</b> (נכון לאפריל 2026), הלקוחות שלנו מעידים על שירות אדיב, סבלנות בבחירת הגופנים והצבעים, ותוצאה סופית שתמיד מעלה חיוך. אנחנו משתמשים במכונות הרקמה המתקדמות ביותר ובחוטים האיכותיים ביותר שקיימים בשוק.
+                </p>
+                <h3>מתנה אישית היא הדרך להגיד "אכפת לי"</h3>
+                <p>
+                    בעידן של ייצור המוני, מתנה שיוצרה במיוחד עבור מישהו היא בעלת ערך סנטימנטלי עצום. כשאתם נותנים חלוק רחצה או מגבת עם רקמה, אתם מראים שהקדשתם מחשבה, שבחרתם את הצבע, את הניסוח ואת העיצוב. זהו סוד הקסם של החנות שלנו – אנחנו עוזרים לכם להתרגש ולרגש אחרים.
+                </p>
+                <p>
+                    אנחנו מזמינים אתכם להגיע אלינו לחנות בכפר סבא, להתרשם משפע הדוגמאות המוצגות במקום, ולבחור את המתנה הבאה שלכם. הצוות המקצועי שלנו יעמוד לרשותכם וייעץ לכם מהו סוג הרקמה המתאים ביותר לכל בד ומטרה.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>צרו קשר</h3>
+                    <p>כתובת: כפר סבא (ליד קניון ערים)</p>
+                    <p>טלפון: <a href="tel:097650150" title="התקשרו לטלפון הקווי">09-765-0150</a></p>
+                    <p>נייד: <a href="tel:0524734466" title="התקשרו לנייד">052-473-4466</a></p>
+                    <p>וואטסאפ: <a href="https://wa.me/972524734466" title="שלחו וואטסאפ">052-473-4466</a></p>
+                </div>
+                <div class="footer-col">
+                    <h3>קישורים מהירים</h3>
+                    <a href="https://one-hour-embroidery.co.il/product-category/embroidery-on-towels/" title="לכל מוצרי המגבות">רקמה על מגבות</a>
+                    <a href="https://www.facebook.com/one.hour.embroidery/" title="בקרו אותנו בפייסבוק" target="_blank">הפייסבוק שלנו</a>
+                    <a href="#about" title="קראו עלינו עוד">אודות החנות</a>
+                </div>
+                <div class="footer-col">
+                    <h3>דירוג ושירות</h3>
+                    <p>דירוג גוגל: 4.7 כוכבים ⭐</p>
+                    <p>וותק וניסיון של עשרות שנים</p>
+                    <p>שירות מהיר - רקמה בשעה!</p>
+                </div>
+                <div class="footer-col">
+                    <h3>דרכי התקשרות</h3>
+                    <a href="tel:0524734466" class="btn" style="margin-bottom: 10px; width: 100%; text-align: center;" title="לחצו להתקשרות">התקשר עכשיו</a>
+                    <a href="https://wa.me/972524734466" class="btn" style="background-color: #25d366; width: 100%; text-align: center;" title="שלחו וואטסאפ">הודעת WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="privacy-note">
+                אנו מכבדים את פרטיות המשתמשים באתר זה. דף הנחיתה אינו כולל טפסי השארת פרטים ואינו אוסף מידע אישי באופן ישיר. ייתכן ונעשה שימוש בכלי סטטיסטיקה וניתוח תנועה (כגון cookies) לצורך שיפור חוויית המשתמש. האתר מאוחסן ומופעל באמצעות פלטפורמת github, וייתכן כי נתונים טכניים נאספים בהתאם למדיניות הפלטפורמה. ניתן לעיין במדיניות הפרטיות של github בקישור הבא: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" title="מדיניות פרטיות GITHUB" target="_blank">מדיניות פרטיות GitHub</a>
+            </div>
+
+            <div class="tlh">ט.ל.ח</div>
+
+            <div class="bottom-bar">
+                <p>נבנה עם היררכיית כותרות, קישורי עוגן, ALT לתמונות, TITLE לקישורים, גודל טקסט מינימלי של 18px וניגודיות משופרת.</p>
+                <a title="נבנה על ידי פרוסייטס" href="https://prosites.co.il/" target="_blank">נבנה על ידי פרוסייטס</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // המבורגר פשוט למובייל
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            if(navLinks.style.display === 'flex') {
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '70px';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '20px';
+                navLinks.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
